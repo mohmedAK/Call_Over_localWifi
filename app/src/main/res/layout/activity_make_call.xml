@@ -1,0 +1,41 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".ActivityMakeCall" >
+
+
+    <TextView
+        android:id="@+id/textViewCalling"
+        android:layout_width="153dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="128dp"
+        android:gravity="center"
+        android:text="@string/calling"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonEndCall"
+        android:layout_width="164dp"
+        android:layout_height="57dp"
+        android:text="@string/endCall"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCalling"
+        app:layout_constraintVertical_bias="0.245" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

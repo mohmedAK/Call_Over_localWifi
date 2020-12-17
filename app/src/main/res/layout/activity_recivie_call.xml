@@ -1,0 +1,63 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".RecivieCall">
+
+
+    <TextView
+        android:id="@+id/textViewIncomingCall"
+        android:layout_width="190dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="92dp"
+        android:gravity="center"
+        android:text="@string/incomingCall"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonEndCall1"
+        android:layout_width="158dp"
+        android:layout_height="52dp"
+        android:text="@string/endCall"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIncomingCall" />
+
+    <Button
+        android:id="@+id/buttonAccept"
+        android:layout_width="156dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="172dp"
+        android:text="@string/accept"
+        android:textColor="@android:color/holo_blue_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIncomingCall" />
+
+    <Button
+        android:id="@+id/buttonReject"
+        android:layout_width="156dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="172dp"
+        android:text="@string/reject"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toEndOf="@+id/buttonAccept"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIncomingCall" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
